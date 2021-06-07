@@ -1,0 +1,92 @@
+@import 'variables';
+@import 'global';
+
+.container{
+    max-width:800px;
+    width: 100%;
+
+    .col1{
+       text-align: center;
+       background-color: $dark-blue;
+       padding: 0rem 1rem;
+       .col1_intro{
+           padding-top: 4rem;
+           .col1_intro_title{
+               color: $white;
+            }
+            .col1_intro__para{
+                padding-top: .5rem;
+               color:$light-purple;
+           }
+       }
+       .mockup{
+           width: 100%;
+           height:auto;
+       }
+    }
+    .col2{
+        background: #fff;
+        padding:2.5rem;
+
+        .col2_title{
+            font-weight: bold;
+            font-size: 2rem;
+            margin-bottom:1rem;
+        }
+        form{
+            .input{
+                margin-bottom: 1rem;
+                label{
+                    font-family:'Roboto', sans-serif;
+                    margin-bottom: 2rem;
+                    font-weight: 500;
+                    input[type=email],input[type=password]{
+                        border:1px solid gray;
+                        width:100%;
+                        padding: .8rem;
+                        display: block;
+                        margin-top: .2rem;
+                    }
+                    .agreement{
+                        font-weight: 500;
+                    }
+                }               
+            }
+            button{
+                font-family:'Roboto', sans-serif;
+                width: 100%;
+                text-align: center;
+                background: $dark-blue;
+                color: #fff;
+                font-weight: 500;
+                padding: 1rem 0rem;
+                border: none;
+                border-radius: 5px;
+            }
+        }
+    }
+}   
+
+@media (min-width:768px) {
+
+    .container{
+        margin: auto;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        max-height: 500px;
+        box-shadow: 0px 2px 3px -1px rgba(0,0,0,0.48);
+        .col1{
+            .col1_intro{
+                padding-top: 1rem;
+            }
+            .mockup{
+                width: 100%;
+            }
+        }
+
+    }
+}

@@ -1,13 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/dist/css/main.css">
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+      <div class="container">
+          <div class="col1">
+              <div class="col1_intro">
+                <h2 class="col1_intro_title">Gradie</h2>
+                <p class="col1_intro__para">Beautiful gradients in seconds</p>
+              </div>
+              <img src="/Assets/iPhoneMockup.png" class="mockup" alt="an iPhone Mockup">
+          </div>
+          <div class="col2">
+              <h2 class="col2_title">Login</h2>
+              <form action="/">
+                <div class="input">
+                    <label for="mail">Email
+                        <input type="email" name="mail" id="mail" placeholder="john@example.com" required>  
+                    </label>
+                </div>
+                <div class="input">
+                    <label for="passwrd">Password
+                        <input type="password" name="password" id="passwrd" placeholder="At least 8 characters" required>  
+                    </label>
+                </div>
+                <div class="input">
+                    <label for="chckbox">
+                        <input type="checkbox" name="checkbox" id="chckbox">
+                        By creating an account, you agree to the <a href="#" class="agreement">Terms & Conditions</a>
+                    </label>
+                </div>
+                <button type="submit">Create an Account</button>                
+              </form>
+          </div>
+      </div>
+  </body>
 </html>
